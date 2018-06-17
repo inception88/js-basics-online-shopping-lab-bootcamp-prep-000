@@ -63,5 +63,10 @@ for (i=0;i<cart.length;i++){
 
 function placeOrder(cardNumber) {
 var output = "Sorry, we don't have a credit card on file for you."
+var total = total();
 cart.length = 0;
+if (cardnumber =>0){
+  output = `Your total cost is $${total}, which will be charged to the card ${cardnumber}.`
+}
+return output
 }
